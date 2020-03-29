@@ -1,9 +1,9 @@
-pipelie{
-   stages{
-       stage("Git Checkout"){
-           steps{
+pipeline {
+   stages {
+        stage("Git Checkout"){
+           steps {
                git cfredentialsId: 'github', url: 'https://github.com/vijayalaxmiduvva/mvnproject.git'
            }
-       }
+        }
    }
 } 
