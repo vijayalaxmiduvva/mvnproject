@@ -1,0 +1,11 @@
+ // comment
+ pipeline {
+  agent any
+  stages {
+        stage('Checkout git'){
+           steps{
+            git pull: true, url: 'https://github.com/vijayalaxmiduvva/mvnproject.git'
+           }
+         }
+ }
+
