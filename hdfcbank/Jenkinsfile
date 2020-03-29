@@ -2,7 +2,7 @@ pipeline {
    stages {
         stage("Git Checkout"){
            steps {
-               git cfredentialsId: 'github', url: 'https://github.com/vijayalaxmiduvva/mvnproject.git'
+               git credentialsId: 'github', url: 'https://github.com/vijayalaxmiduvva/mvnproject.git'
            }
         }
    }
